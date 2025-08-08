@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ENTREGA_360_CASA FMU</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-ingreso-camino">
+        <li class="text">Ingreso camino</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-ingreso-jardn-pt1">
+        <li class="text">Ingreso jardín pt.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-ingreso-jardn-pt2">
+        <li class="text">Ingreso jardín pt.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-ingreso-jardn-pt3">
+        <li class="text">Ingreso jardín pt.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-ingreso-puerta-exterior">
+        <li class="text">Ingreso puerta (exterior)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-jardn-banca">
+        <li class="text">Jardín banca</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-ingreso-puerta-interior">
+        <li class="text">Ingreso puerta (interior)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-pasillo-central-pt-1">
+        <li class="text">Pasillo central pt. 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-pasillo-central-pt-2">
+        <li class="text">Pasillo central pt. 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-comedor">
+        <li class="text">Comedor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-sala-comedor">
+        <li class="text">Sala-comedor</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-sala">
+        <li class="text">Sala</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-cocina">
+        <li class="text">Cocina</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-alacenas">
+        <li class="text">Alacenas</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-lavandera">
+        <li class="text">Lavandería</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-zona-hmeda-pt-1">
+        <li class="text">Zona húmeda pt. 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-zona-hmeda-pt-2">
+        <li class="text">Zona húmeda pt. 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-zona-hmeda-pt-3">
+        <li class="text">Zona húmeda pt. 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-zona-hmeda-pt-4">
+        <li class="text">Zona húmeda pt. 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-estudio-pt-1">
+        <li class="text">Estudio pt. 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-estudio-pt-2">
+        <li class="text">Estudio pt. 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-estudio-pt-3">
+        <li class="text">Estudio pt. 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-estudio-pt-4">
+        <li class="text">Estudio pt. 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-pasillo-linos-habitaciones">
+        <li class="text">Pasillo linos (habitaciones)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-pasillo-ingreso-habitaciones">
+        <li class="text">Pasillo ingreso habitaciones)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-hab-principal-pt1">
+        <li class="text">Hab. principal pt.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-hab-principal-pt2">
+        <li class="text">Hab. principal pt.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-hab-principal-pt3">
+        <li class="text">Hab. principal pt.3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-hab-principal-pt4">
+        <li class="text">Hab. principal pt.4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-hab-prin-walking-closet-pt1">
+        <li class="text">Hab. prin. Walking closet pt.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-hab-prin-walking-closet-pt2">
+        <li class="text">Hab. prin. Walking closet pt.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-hab-prin-bao-pt1">
+        <li class="text">Hab. prin. Baño pt.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-hab-prin-bao-pt2">
+        <li class="text">Hab. prin. Baño pt.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-hab-secundaria-pt-1">
+        <li class="text">Hab. secundaria pt. 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-hab-secundaria-pt-2">
+        <li class="text">Hab. secundaria pt. 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-hab-secundaria-pt-3">
+        <li class="text">Hab. secundaria pt. 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-hab-secun-bao-pt-1">
+        <li class="text">Hab. secun. Baño pt. 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-hab-secun-bao-pt-2">
+        <li class="text">Hab. secun. Baño pt. 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-exterior-iso-1">
+        <li class="text">Exterior ISO 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-exterior-iso-2">
+        <li class="text">Exterior ISO 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-exterior-iso-3">
+        <li class="text">Exterior ISO 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-exterior-iso-4">
+        <li class="text">Exterior ISO 4</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-exterior-iso-5">
+        <li class="text">Exterior ISO 5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-fachada-occidental">
+        <li class="text">Fachada occidental</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-fachada-norte">
+        <li class="text">Fachada norte</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-fachada-oriental">
+        <li class="text">Fachada oriental</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-fachada-sur">
+        <li class="text">Fachada sur</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-salida-de-lavandera">
+        <li class="text">Salida de lavandería</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-terraza-zona-hmeda-pt-1">
+        <li class="text">Terraza Zona húmeda pt. 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-terraza-zona-hmeda-pt2">
+        <li class="text">Terraza zona húmeda pt.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-terraza-sala-comedor-pt1">
+        <li class="text">Terraza sala comedor pt.1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-terraza-sala-comedor-pt2">
+        <li class="text">Terraza sala comedor pt.2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-tezarra-hab-princ">
+        <li class="text">Tezarra Hab. Princ.</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-bao-social-pt-2">
+        <li class="text">Baño social pt. 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-bao-social-pt-1">
+        <li class="text">Baño social pt. 1</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
